@@ -19,6 +19,9 @@ var EventApplication = React.createClass({
 			}
 		});
 	},	
+	handleSearch: function(events){
+		this.setState({ events: events});
+	},
 	render: function(){
 		return (
 			<div className="container">
@@ -26,6 +29,11 @@ var EventApplication = React.createClass({
 					<h1>ReactJS Tutorial</h1>
 					<p>by Zhiguang Xu</p>
 				</div>
+				<div className="row">
+					<div className="col-md-4">
+						<SearchForm handleSearch={this.handleSearch}/>
+					</div>
+				</div>				
 				<div className="row">
 					<div className="col-md-12">
 						<EventTable events={this.state.events}/>
