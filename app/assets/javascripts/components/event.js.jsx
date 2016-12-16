@@ -100,9 +100,9 @@ var Event = React.createClass({
 					   onClick={ this.handleDelete } >
 					   Delete
 					</a>
-					<a className="btn btn-danger btn-xs"
+					<a className="btn btn-primary btn-xs"
 					   onClick={ this.handleToggle } >
-					   Update
+					   Edit
 					</a>
 				</td>
 			</tr>
